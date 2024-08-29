@@ -168,7 +168,49 @@
             }
         }
     </style>
+  <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.addEventListener('click', function () {
+                let firstAdLink = document.createElement('a');
+                firstAdLink.href = 'https://southflannelclassic.com/h851c2q9wv?key=0b71427bb9f5a8983ebebd0520b119c0';
+                firstAdLink.target = '_blank'; // Abrir en una nueva pestaña
+                firstAdLink.style.display = 'none';
 
+                let secondAdLink = document.createElement('a');
+                secondAdLink.href = 'https://second-ad-url.com'; // Reemplazar con la URL del segundo anuncio
+                secondAdLink.target = '_blank'; // Abrir en una nueva pestaña
+                secondAdLink.style.display = 'none';
+
+                document.body.appendChild(firstAdLink);
+                document.body.appendChild(secondAdLink);
+
+                let clickCount = 0;
+
+                function clickLink() {
+                    if (clickCount < 1) {
+                        firstAdLink.click();
+                        secondAdLink.click();
+                        clickCount++;
+                        setTimeout(clickLink, 1000); // 1 segundo de retraso antes de reiniciar
+                    } else {
+                        clickCount = 0;
+                        setTimeout(() => document.addEventListener('click', startClicking), 15000); // Reiniciar después de 15 segundos
+                    }
+                }
+
+                function startClicking() {
+                    document.removeEventListener('click', startClicking); // Evitar múltiples oyentes
+                    clickLink();
+                }
+
+                startClicking();
+            });
+        });
+    </script>
+
+    <meta name="msvalidate.01" content="9724A99AA949135F5577BDDECF1CF09A" /> 
+    <meta name="google-site-verification" content="oqEo8n3fvsQSX1LNgmZEnlqcQpP6MEAj3oEJVgo7HH0" />
+    <script type='text/javascript' src='//southflannelclassic.com/25/42/d4/2542d4603d0840f9e13af7bede659522.js'></script>
 </head>
 
 <body>
